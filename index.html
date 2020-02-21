@@ -1,46 +1,101 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <header>
-            <title>Papers</title>
-            <nav>
-                <ul>
-                    <li><a href="busca.html">Busca Avançada</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <div class="Informacao">
-            <h1>Características</h1>
-            <p>Nossa base de dados é colaborativa e está disponível a todos da comunidade. 
-            A ideia é disponibilizar esses dados de forma prática e também ser um espaço para reunir novos dados encontrados.</p>
-        </div>
-        <div class="Informacao">
-            <h1>Base de Dados</h1>
-            <p>Nossa base de dados foi catalogada a partir de documentos históricos datados do século 17. 
-            O sistema é parte do trabalho conjunto de estudantes de história 
-            e de ciência da computação e visa disponibilizar os dados a todos da comunidade.</p>
-        </div>
-        <div class="Informacao">
-            <h1>Entre em contato</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus. 
-                Leo duis ut diam quam nulla. Laoreet id donec ultrices tincidunt arcu.</p>
-        </div>
-        <div class="Informacao">
-            <h1>Busca Avançada</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus. 
-                Leo duis ut diam quam nulla. Laoreet id donec ultrices tincidunt arcu.</p>
-        </div>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Papers</title>
+  </head>
 
-        <footer>
-            <ul>
-                <li><a href="/busca.html">Busca Avançada</a></li>
-            </ul>
-        </footer>
-    </body>
+  <body>
+    <div class="d-flex flex-column"id="topo">
+      <nav id="header" class="navbar p-2 bg-transparent">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#basededados">Base de Dados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#caracteristicas">Características</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#explore">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Entre em contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="busca.html">Busca</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="jumbotron jumbotron-fluid mb-0 p-2 bg-transparent">
+        <div class="container">
+          <h1 class="display-4">Buscas históricas em milhares de registros</h1>
+          <p class="lead">Busque por milhares de registros sobre habitantes, 
+            escravos e trabalhadores da região paulista dos séculos 17 e 18.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="container mt-0">
+        <h1 class="display-4 mb-4" id="basededados">Base de Dados</h1>
+        <p class="lead">Nossa base de dados foi catalogada a partir de documentos históricos datados do século 17. 
+          O sistema é parte do trabalho conjunto de estudantes de história 
+          e de ciência da computação e visa disponibilizar os dados a todos da comunidade.</p>
+      </div>
+      <div class="d-flex justify-content-around">
+        <img src="img.png" alt="pagina" width="320" height="240">
+        <img src="img.png" alt="pagina" width="320" height="240">
+        <img src="img.png" alt="pagina" width="320" height="240">
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0  bg-secondary text-white">
+      <div class="container mt-0">
+        <h1 class="display-4 mb-4" id="caracteristicas">Características</h1>
+        <p class="lead">Acreditamos que informações devem estar disponível a todos da comunidade. 
+          A ideia é disponibilizar esses dados para consulta de forma prática e também ser um espaço para reunir novos dados encontrados.</p>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0">
+      <div class="container mt-0">
+        <h1 class="display-4 mb-4" id="explore">Explore</h1>
+        <p class="lead">A partir da página de busca é possível efetuar buscas em milhares de registros utilizando diversos filtros
+          para especificar os resultados.
+        </p>
+      </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid mb-0 bg-secondary text-white">
+      <div class="container mt-0">
+        <h1 class="display-4 mb-4" id="contato">Entre em contato</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus. 
+          Leo duis ut diam quam nulla. Laoreet id donec ultrices tincidunt arcu.</p>
+      </div>
+    </div>
+
+    <nav id="footer" class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">PAPERS</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#caracteristicas">Características</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#basededados">Base de Dados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Entre em contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="busca.html">Busca</a>
+        </li>
+      </ul>
+    </nav>
+
+  </body>
 </html>
