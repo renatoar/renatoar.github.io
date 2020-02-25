@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title>Papers</title>
@@ -16,13 +17,10 @@
             <a class="nav-link" href="#basededados">Base de Dados</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#caracteristicas">Características</a>
+            <a class="nav-link" href="#apreciacao">Apreciação crítica da fonte</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#explore">Explore</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contato">Entre em contato</a>
+            <a class="nav-link" href="#contato">Contato</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="busca.html">Busca</a>
@@ -53,29 +51,44 @@
       </div>
     </div>
 
-    <div class="jumbotron jumbotron-fluid mb-0  bg-secondary text-white">
+    <div class="jumbotron jumbotron-fluid mb-0" style="background-color: #C0C0C0">
       <div class="container mt-0">
-        <h1 class="display-4 mb-4" id="caracteristicas">Características</h1>
-        <p class="lead">Acreditamos que informações devem estar disponível a todos da comunidade. 
-          A ideia é disponibilizar esses dados para consulta de forma prática e também ser um espaço para reunir novos dados encontrados.</p>
+        <h1 class="display-4 mb-4" id="apreciacao">Apreciação Crítica da Fonte</h1>
+        <p class="lead">
+          As Listas Nominativas de Habitantes são recenseamentos de natureza demográfica e socioeconômica dos habitantes dos núcleos domésticos – ou “fogos” – de uma dada unidade administrativa – freguesia, vila, município etc. Sua elaboração recaía sobre as Companhias de Ordenanças, que acumulavam às poucas atribuições militares diversas outras tarefas, sobretudo aquelas relacionadas à administração colonial. “Sem exagero”, assegurou Caio Prado Júnior, essas companhias “tornaram possível a ordem legal e administrativa neste território imenso, de população dispersa e escassez de funcionários regulares” (Prado Júnior, 2008, p. 322)</p>
+        <p class="lead">  
+          Os levantamentos eram normalmente realizados por cabos de esquadra e encaminhados ao capitão da respectiva companhia, que os organizava sob o formato de listagem nominativa. As listagens das diversas companhias eram, então, transportas pelo capitão-mor em mapas estatísticos gerais, sendo esse conjunto de documentos posteriormente enviado à Corte – ao menos no período anterior à Independência. Regra geral, portanto, os recenseamentos de uma dada unidade administrativa agregam mais de uma listagem, cada qual construída pelos esforços de diversos indivíduos. Essa multiplicidade de autorias – evidenciada pela variedade de papéis, tintas, caligrafias e informações coletadas - acaba por reduzir a coesão desse tipo de fonte. (Bacellar, 2013, pp. 44-49; Bacellar, 2008, pp. 117-118) Ainda assim, pode-se notar a recorrência de alguns dados específicos em uma parte considerável dos recenseamentos. São eles, dos que se aplicam a:</p>
+        <ol class="lead lista">
+          <li>todos os moradores de domicílio, incluindo-se agregados e escravos: nome; sexo, implícito no nome; idade; estado civil; cor; naturalidade;</li><br>
+          <li>os homens livres do domicílio, incluindo-se agregados: ocupação;</li><br>
+          <li>o chefe do domicílio: produção anual.</li><br>
+        </ol>
+        <p class="lead">  
+          Na América portuguesa, os primeiros recenseamentos de caráter sistemático foram arrolados em 1765, atendendo às demandas mais recentes de uma política metropolitana preocupada com a reorganização administrativa de suas zonas coloniais. Existe alguns registros populacionais realizados nos séculos anteriores, mas que não passam de estimativas grosseiras de mensurar os habitantes de uma área tão vasta e fragmentada quanto era aquela. (Bacellar, 2008, p. 114)
+          A quase totalidade dos recenseamentos confeccionados faz parte do que Maria Luiza Marcílio denomina “primeiro momento” (1765-1797) e “segundo momento” (1797-1830) da prática censitária na América portuguesa e no Brasil independente. De acordo com a autora, enquanto os interesses metropolitanos no primeiro momento eram sobretudo militares – em vista dos constantes conflitos na Bacia do Rio da Prata e na Amazônia –, no segundo momento eles se tornaram predominantemente econômicos e ligados a políticas populacionais – impulsionados por um mercantilismo preocupado em racionalizar a máquina administrativa, aumentar a população, e desenvolver a agricultura e o comércio nas possessões coloniais. (Marcílio, 2000, pp. 32-34)
+          De acordo com Carlos Bacellar, os recenseamentos são uma “belíssima fonte serial, muito rica, seja para estudos de ordem demográfica, seja para a história social” (Bacellar, 1997, pp. 39-42) No entanto, como também nota o autor, apresentam obstáculos muitas vezes impeditivos à pesquisa. Um dos problemas mais recorrentes tem sido o “congelamento” de alguns domicílios, para os quais não se anotam nascimentos, falecimentos, compras e/ou vendas de escravos ou mesmo alterações no volume da produção. Talvez o elemento mais grave, porém, seja o ocultamento de fogos de um ano para o outros, como se houvessem sido extintos. Tais problemas poderiam ser causados por diversos fatores, dentre eles:</p>
+        <ol class="lead">
+          <li>a tendência consistente da população a relacionar os levantamentos populacionais aos temidos recrutamentos militares. Era comum aos homens internarem-se pelos matos, fugirem em direção aos sertões ou migrarem para as capitanias vizinhas; </li> <br>
+          <li>as dimensões das América portuguesa, que dificultavam o levantamento dos domicílios de cada região;</li><br>
+          <li>o analfabetismo de grande parte da população, que apresentava dificuldades para reportar os quantitativos que lhes eram solicitados;</li><br>
+          <li>os erros, inconsistências, mal-entendidos, desleixos e falsificações por parte dos próprios responsáveis pela coleta dos dados;</li><br>
+          <li>a referida multiplicidade de autorias. (Bacellar, 2013, pp. 40-45; Martins, 1995, p. 26)</li><br>
+        </ol>
+        <p class="lead">
+          Apesar das limitações, a importância das Listas Nominativas de Habitantes para a pesquisa histórica é inegável. Nas palavras de Bacellar: </p>
+        <p class="lead quote">
+          “Para o caso de São Paulo, as séries nem sempre são completas, mas constituem um conjunto formidável e único, que permite que acompanhemos indivíduos ou famílias por anos e mesmo décadas consecutivas, inclusive escravos. (...) A exploração dessas fontes ainda é proporcionalmente reduzida, restrita, no mais das vezes, a análises centradas em uma única lista, fazenda falta, ainda hoje, trabalhos com olhar longitudinal, que acompanhem essas populações no nível da micro história, recuperando trajetórias e estratégias familiares ao longo de gerações. Este é o desafio ainda posto para a historiografia brasileira”. (Bacellar, 2013, p. 55) </p>
       </div>
     </div>
 
     <div class="jumbotron jumbotron-fluid mb-0">
       <div class="container mt-0">
-        <h1 class="display-4 mb-4" id="explore">Explore</h1>
-        <p class="lead">A partir da página de busca é possível efetuar buscas em milhares de registros utilizando diversos filtros
-          para especificar os resultados.
+        <h1 class="display-4 mb-4" id="contato">Contato</h1>
+        <p class="lead">Entre em contato com os idealizadores do projeto: <br> <br> 
+            Carlos Eduardo Nicolette: <a href="mailto:carlos.nicolette@usp.br">carlos.nicolette@usp.br</a> <br>
+            Felipe Rodrigues Alfonso: <a href="mailto:felipe_alfonso@g.harvard.edu">felipe_alfonso@g.harvard.edu</a> <br>
         </p>
-      </div>
-    </div>
-
-    <div class="jumbotron jumbotron-fluid mb-0 bg-secondary text-white">
-      <div class="container mt-0">
-        <h1 class="display-4 mb-4" id="contato">Entre em contato</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed nisi lacus sed viverra tellus. 
-          Leo duis ut diam quam nulla. Laoreet id donec ultrices tincidunt arcu.</p>
+        
       </div>
     </div>
 
@@ -83,13 +96,13 @@
       <a class="navbar-brand" href="index.html">PAPERS</a>
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link" href="#caracteristicas">Características</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#basededados">Base de Dados</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contato">Entre em contato</a>
+          <a class="nav-link" href="#apreciacao">Apreciação crítica da fonte</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="busca.html">Busca</a>
